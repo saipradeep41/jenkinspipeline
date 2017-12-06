@@ -1,4 +1,5 @@
 properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/saipradeep41/jenkinspipeline/'], pipelineTriggers([pollSCM('')])])
+
 pipeline {
     agent any
 
@@ -10,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'musting..'
+                echo 'musting.'
             }
         }
         stage('Deploy') {
