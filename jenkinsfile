@@ -1,4 +1,8 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/saipradeep41/jenkinspipeline/'], pipelineTriggers([pollSCM('')])])
+properties([
+    [$class: 'GithubProjectProperty',
+     displayName: '',
+     projectUrlStr: 'https://github.com/saipradeep41/jenkinspipeline/'],
+     pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any
